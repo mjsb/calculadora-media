@@ -59,7 +59,7 @@ function atualizaMedia() {
     
     const media = calculaMedia()
     
-    document.getElementById('media-final-valor').innerHTML = media
+    document.getElementById('media-final-valor').innerHTML = media.toFixed(2)
     document.getElementById('media-final-resultado').innerHTML = media >= valorMedia ? spanAprovado : spanReprovado
     
 }
